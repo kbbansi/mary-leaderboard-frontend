@@ -1,0 +1,27 @@
+<div class="container text-center">
+  <div class=" card">
+    <div class="card-body">
+      <table class="table table-striped">
+
+        <thead>
+          <th>Rank (kyu)</th>
+          <th>Total Points</th>
+          <th>Username</th>
+          <th># Languages</th>
+          <th>Languages</th>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let profile of profiles">
+            <td>{{ profile.overall_rank * -1}}</td>
+            <td>{{ profile.honour}}</td>
+            <td><a href="https://www.codewars.com/users/{{profile.username}}">{{ profile.username | uppercase }}</a>
+            </td>
+            <td>{{ profile.languages?.length || '0'}}</td>
+            <td *ngFor="let lang of profile.languages">{{ lang.name }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
