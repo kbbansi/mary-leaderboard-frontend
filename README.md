@@ -1,9 +1,6 @@
 # mary-leaderboard-frontend
 Repository of Angular frontend for Ana's leaderboard-service
 
-# mary-leaderboard-frontend
-Repository of Angular frontend for Ana's leaderboard-service
-
 ### Installation process:
 1. Clone this repository  
 ``git clone https://github.com/maryjonah-turntabl/mary-leaderboard-frontend.git``  
